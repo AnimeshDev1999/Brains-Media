@@ -8,5 +8,9 @@
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+    color: #333;
+  }
+  .tags {
+    @apply px-2 py-1 rounded-md bg-mgld;
   }
 }
