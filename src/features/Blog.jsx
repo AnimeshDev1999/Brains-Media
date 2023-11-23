@@ -9,9 +9,14 @@ const Blog = () => {
       <p className="text-slate-700 text-3xl font-semibold mb-8">
         Read Our Latest Blog Posts, News & Articles
       </p>
-      <div className="grid grid-cols-1 gap-5">
+      <div className="grid grid-cols-1 gap-5 mb-8">
         <BlogCard heading="A deep dive into today's work culture." />
         <BlogCard heading="Could online payments takeover physical currency?" />
+      </div>
+      <div className="flex justify-end">
+        <button className="text-mgld text-xl underline">
+          View all articles
+        </button>
       </div>
     </div>
   );

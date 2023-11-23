@@ -1,10 +1,11 @@
 const Hero = () => {
   return (
-    <div className="flex px-5 justify-center items-center py-16">
+    <div className="flex px-5 items-center py-16">
       <div>
         <h1 className="text-5xl font-semibold mb-5">
-          Get your <span className="text-mgld">business</span> online <br /> in
-          less than <span className="text-mgld">24 hours</span>.
+          Get your <br /> <span className="text-mgld">business</span> <br />{" "}
+          online <br /> in less than <br />{" "}
+          <span className="text-mgld">24 hours</span>.
         </h1>
         <p className="text-xl text-slate-500 mb-5">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel fugiat
