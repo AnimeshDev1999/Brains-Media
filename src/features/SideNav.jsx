@@ -8,10 +8,10 @@ import CloseBtn from "./navState/CloseBtn";
 
 const SideNav = () => {
   const data = [
-    { nam: "Home", img: home },
-    { nam: "About", img: people },
-    { nam: "Services", img: bag },
-    { nam: "Blog", img: book },
+    { nam: "Home", img: home, path: "/" },
+    { nam: "About", img: people, path: "/about" },
+    { nam: "Services", img: bag, path: "/services" },
+    { nam: "Blog", img: book, path: "/about" },
   ];
 
   return (

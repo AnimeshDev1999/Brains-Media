@@ -26,6 +26,12 @@
     background-position: center;
   }
 
+  /* .wave {
+    background-image: url(./images/wave.svg);
+    background-size: cover;
+    background-position: top;
+  } */
+
   .feature-logo {
     aspect-ratio: 3/2;
     object-fit: contain;

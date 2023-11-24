@@ -5,6 +5,8 @@ import SideNav from "./features/SideNav";
 import Overlay from "./features/Overlay";
 import Footer from "./features/Footer";
 import NavBar from "./features/NavBar";
+import AboutPg from "./pages/AboutPg";
+import ServicesPg from "./pages/ServicesPg";
 
 function App() {
   const val = useSelector((state) => state.toggler.value);
@@ -14,6 +16,8 @@ function App() {
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/about" element={<AboutPg />} />
+        <Route path="/services" element={<ServicesPg />} />
       </Routes>
       {val ? (
         <>
