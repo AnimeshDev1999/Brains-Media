@@ -24,7 +24,7 @@ const Stats = () => {
       >
         <div className="grid grid-cols-2 gap-5 bg-mlite p-5 rounded-md">
           {data.map((item) => (
-            <div className="">
+            <div key={item.heading}>
               <p className="text-4xl font-semibold text-slate-700">
                 {counterOn && (
                   <CountUp
