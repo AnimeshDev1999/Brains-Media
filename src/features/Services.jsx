@@ -1,4 +1,7 @@
 import ServiceCard from "./ServiceCard";
+import social from "../images/service-social.svg";
+import website from "../images/service-website.svg";
+import content from "../images/service-content.svg";
 
 const Services = () => {
   return (
@@ -7,9 +10,9 @@ const Services = () => {
         Services We Offer
       </h2>
       <div className="grid grid-cols-1 gap-5 mb-8">
-        <ServiceCard nam="Social Media Posts" />
-        <ServiceCard nam="Website Design" />
-        <ServiceCard nam="Content Marketing" />
+        <ServiceCard img={social} alt="social" nam="Social Media Posts" />
+        <ServiceCard img={website} alt="website" nam="Website Design" />
+        <ServiceCard img={content} alt="content" nam="Content Marketing" />
       </div>
       <div className="flex justify-end">
         <button className="text-mgld text-xl underline">

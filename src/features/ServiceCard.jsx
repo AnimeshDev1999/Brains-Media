@@ -2,8 +2,8 @@ import card1 from "../images/card1.svg";
 
 const ServiceCard = (props) => {
   return (
-    <div className="shadow-md p-5 rounded-md">
-      {/* <img src={card1} alt="service" className="h-32 mb-6" /> */}
+    <div className="shadow-md p-5 rounded-md overflow-hidden">
+      <img src={props.img} alt={props.alt} className="mb-8" />
       <div>
         <h3 className="text-xl mb-1">{props.nam}</h3>
         <p className="text-lg text-slate-500 mb-3">

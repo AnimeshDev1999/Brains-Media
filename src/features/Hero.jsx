@@ -1,7 +1,7 @@
 const Hero = () => {
   return (
-    <div className="flex px-5 items-center py-16">
-      <div>
+    <div className="flex wave items-center py-16">
+      <div className="backdrop p-5">
         <h1 className="text-5xl font-semibold mb-5">
           Get your <br /> <span className="text-mgld">business</span> <br />{" "}
           online <br /> in less than <br />{" "}

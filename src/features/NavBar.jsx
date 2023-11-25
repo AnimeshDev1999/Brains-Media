@@ -4,7 +4,7 @@ import OpenBtn from "./navState/OpenBtn";
 
 const NavBar = () => {
   return (
-    <div className="p-5 flex justify-between items-center">
+    <div className="px-5 py-2 flex justify-between items-center">
       <img src={logo} alt="logo" className="h-12" />
       <OpenBtn />
     </div>

@@ -1,5 +1,4 @@
 import React from "react";
-import social from "../images/service-social.svg";
 
 const ServiceAllCrd = (props) => {
   return (
@@ -16,9 +15,11 @@ const ServiceAllCrd = (props) => {
         consequatur Lorem ipsum dolor, sit amet consectetur adipisicing elit
         Lorem ipsum dolor sit amet consectetur adipisicing elit.
       </p>
-      <button className="bg-mgld text-white px-2 py-1 text-xl rounded-md">
-        Get a Quote
-      </button>
+      <div className="flex justify-end">
+        <button className="bg-mgld text-white px-2 py-1 text-xl rounded-md">
+          Get a Quote
+        </button>
+      </div>
     </div>
   );
 };

@@ -26,11 +26,15 @@
     background-position: center;
   }
 
-  /* .wave {
-    background-image: url(./images/wave.svg);
+  .wave {
+    background-image: url(./images/pattern.svg);
     background-size: cover;
     background-position: top;
-  } */
+  }
+
+  .backdrop {
+    background: #ffffffd7;
+  }
 
   .feature-logo {
     aspect-ratio: 3/2;
