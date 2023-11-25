@@ -2,7 +2,7 @@ import TestCard from "./TestCard";
 
 const Testimonial = () => {
   return (
-    <div className="px-5 py-16 grid grid-cols-1 gap-5">
+    <div className="px-5 py-16 grid grid-cols-1 md:px-10 max-w-[1280px] mx-auto lg:grid-cols-2 gap-5">
       <div>
         <h2 className="text-mgld text-2xl font-semibold mb-3">
           Join the Success!

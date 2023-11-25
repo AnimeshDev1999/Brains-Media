@@ -7,7 +7,7 @@ const OpenBtn = () => {
   const dispatch = useDispatch();
 
   return (
-    <div>
+    <div className="md:hidden">
       <button
         onClick={() => dispatch(toggle())}
         className="bg-white p-1 rounded-md overflow-hidden"

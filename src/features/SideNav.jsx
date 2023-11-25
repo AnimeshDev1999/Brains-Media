@@ -1,4 +1,5 @@
 import home from "../images/home.svg";
+import { useLocation } from "react-router-dom";
 import people from "../images/people.svg";
 import bag from "../images/bag.svg";
 import search from "../images/search.svg";
@@ -14,6 +15,8 @@ const SideNav = () => {
     { nam: "Blog", img: book, path: "/about" },
   ];
 
+  const location = useLocation();
+
   return (
     <div className="fixed p-5 top-0 right-0 h-full w-4/5 bg-mlite">
       <div className="flex flex-col h-full gap-3 justify-between">
@@ -24,7 +27,10 @@ const SideNav = () => {
         {/* Sidebar bottom section */}
         <div>
           <div className="flex items-center gap-2 mb-3 bg-white rounded-md px-5 py-2">
-            <p>Page</p> <p>|</p> <p className="text-mgld text-xl">Home</p>{" "}
+            <p>Page</p> <p>|</p>{" "}
+            <p className="text-mgld text-xl">
+              {location.state ? location.state : "Home"}
+            </p>{" "}
           </div>
           <div className="flex rounded-md overflow-hidden mb-3">
             <input

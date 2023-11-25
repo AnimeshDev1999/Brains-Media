@@ -5,11 +5,11 @@ import Vision from "../features/Vision";
 
 const AboutPg = () => {
   return (
-    <>
+    <div className="md:px-5 max-w-[1280px] mx-auto">
       <About />
       <Mission />
       <Vision />
-    </>
+    </div>
   );
 };
 

@@ -7,7 +7,7 @@ import insta from "../images/insta.svg";
 const Footer = () => {
   return (
     <div className="bg-mlite p-5 mt-32">
-      <div className="grid grid-cols-2 gap-y-5 pb-5 border-b-mgld border-b-[2px]">
+      <div className="grid max-w-[1280px] mx-auto grid-cols-2 md:place-items-center md:grid-cols-3 gap-y-5 pb-5 border-b-mgld border-b-[2px]">
         <img src={logo} alt="logo" className="h-16" />
         <div className="flex gap-3">
           <img src={insta} alt="facebook" className="w-7" />
@@ -15,7 +15,7 @@ const Footer = () => {
           <img src={tw} alt="facebook" className="w-7" />
           <img src={linked} alt="facebook" className="w-7" />
         </div>
-        <div className="col-span-2">
+        <div className="col-span-2 md:col-span-1">
           <a href="tel:95355-33588" className="block text-lg">
             9535533588
           </a>
@@ -27,7 +27,7 @@ const Footer = () => {
           </a>
         </div>
       </div>
-      <p className="pt-5">
+      <p className="pt-5 md:text-center">
         ©Brains Media Solutions Pvt. Ltd. All Rights Reserved{" "}
       </p>
     </div>

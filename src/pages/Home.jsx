@@ -8,7 +8,7 @@ import Stats from "../features/Stats";
 
 const Home = () => {
   return (
-    <>
+    <div>
       <Hero />
       <Partners />
       <Services />
@@ -16,7 +16,7 @@ const Home = () => {
       <Stats />
       <Testimonial />
       <Cta />
-    </>
+    </div>
   );
 };
 

@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-import { useSelector, useDispatch } from "react-redux";
+import { useSelector } from "react-redux";
 import Home from "./pages/Home";
 import SideNav from "./features/SideNav";
 import Overlay from "./features/Overlay";
@@ -18,6 +18,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<AboutPg />} />
         <Route path="/services" element={<ServicesPg />} />
+        <Route path="*" element={<Home />} />
       </Routes>
       {val ? (
         <>

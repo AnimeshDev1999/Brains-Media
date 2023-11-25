@@ -10,7 +10,7 @@ const Partners = () => {
   const settings = {
     dots: false,
     infinite: true,
-    slidesToShow: 2,
+    slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
     speed: 2000,
@@ -18,7 +18,7 @@ const Partners = () => {
     cssEase: "linear",
   };
   return (
-    <div className="py-16 px-5">
+    <div className="py-16 px-5 md:px-10 max-w-[1280px] mx-auto">
       <h2 className="text-mgld text-2xl font-semibold mb-2">
         Our Awesome Clients
       </h2>

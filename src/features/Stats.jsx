@@ -11,7 +11,7 @@ const Stats = () => {
     { heading: "Employees", num: 8 },
   ];
   return (
-    <div className="py-16 px-5">
+    <div className="py-16 px-5 md:px-10 max-w-[1280px] mx-auto">
       <h2 className="text-mgld text-2xl font-semibold mb-2">
         Our Progress Report
       </h2>
@@ -22,7 +22,7 @@ const Stats = () => {
         onEnter={() => setCounterOn(true)}
         onExit={() => setCounterOn(false)}
       >
-        <div className="grid grid-cols-2 gap-5 bg-mlite p-5 rounded-md">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-5 bg-mlite p-5 rounded-md">
           {data.map((item) => (
             <div key={item.heading}>
               <p className="text-4xl font-semibold text-slate-700">
