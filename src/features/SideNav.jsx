@@ -23,6 +23,9 @@ const SideNav = () => {
         </div>
         {/* Sidebar bottom section */}
         <div>
+          <div className="flex items-center gap-2 mb-3 bg-white rounded-md px-5 py-2">
+            <p>Page</p> <p>|</p> <p className="text-mgld text-xl">Home</p>{" "}
+          </div>
           <div className="flex rounded-md overflow-hidden mb-3">
             <input
               type="text"
@@ -38,6 +41,9 @@ const SideNav = () => {
               <SideBtn key={item.nam} obj={item} />
             ))}
           </div>
+          <p className="mt-5 pt-5 border-t-[2px] border-t-mgld">
+            ©Brains Media Solutions Pvt. Ltd. All Rights Reserved{" "}
+          </p>
         </div>
       </div>
     </div>
