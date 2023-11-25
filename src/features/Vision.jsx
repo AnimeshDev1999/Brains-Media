@@ -1,17 +1,21 @@
 import React from "react";
+import vision from "../images/vision.svg";
+import AbtCard from "./AbtCard";
 
 const Vision = () => {
   return (
-    <div className="pt-16 px-5">
+    <div className="px-5">
       <h2 className="text-mgld text-2xl font-semibold mb-2">Our Vision</h2>
       <p className="text-slate-700 text-3xl font-semibold mb-3">
         Lorem ipsum dolor sit amet consectetur.
       </p>
-      <p className="text-xl bg-mlite p-5 rounded-md text-slate-500 mb-5">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet magni
-        consectetur quas ab ea reiciendis ipsum perspiciatis eligendi
-        consequatur Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-      </p>
+      <AbtCard
+        img={vision}
+        alt="vision"
+        content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet magni
+          consectetur quas ab ea reiciendis ipsum perspiciatis eligendi
+          consequatur Lorem ipsum dolor, sit amet consectetur adipisicing elit."
+      />
     </div>
   );
 };

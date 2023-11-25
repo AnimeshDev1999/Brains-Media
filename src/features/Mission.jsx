@@ -1,4 +1,6 @@
 import React from "react";
+import mission from "../images/mission.svg";
+import AbtCard from "./AbtCard";
 
 const Mission = () => {
   return (
@@ -7,11 +9,13 @@ const Mission = () => {
       <p className="text-slate-700 text-3xl font-semibold mb-3">
         Lorem ipsum dolor sit amet consectetur.
       </p>
-      <p className="text-xl bg-mlite p-5 rounded-md text-slate-500 mb-5">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet magni
-        consectetur quas ab ea reiciendis ipsum perspiciatis eligendi
-        consequatur Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-      </p>
+      <AbtCard
+        img={mission}
+        alt="mission"
+        content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet magni
+          consectetur quas ab ea reiciendis ipsum perspiciatis eligendi
+          consequatur Lorem ipsum dolor, sit amet consectetur adipisicing elit."
+      />
     </div>
   );
 };

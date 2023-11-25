@@ -1,21 +1,31 @@
 import React from "react";
+import ServiceAllCrd from "../features/ServiceAllCrd";
+import social from "../images/service-social.svg";
+import website from "../images/service-website.svg";
+import content from "../images/service-content.svg";
+import click from "../images/service-click.svg";
+import search from "../images/service-search.svg";
 
 const ServicesPg = () => {
+  const data = [
+    { name: "Social Media Marketing", img: social, alt: "social" },
+    { name: "Website Designing", img: website, alt: "website" },
+    { name: "Content Marketing", img: content, alt: "content" },
+    { name: "Pay Per Click", img: click, alt: "click" },
+    { name: "Search Engine Optimization", img: search, alt: "search" },
+  ];
+
   return (
     <div className="pt-16 px-5">
       <h2 className="text-mgld text-2xl font-semibold mb-2">Services</h2>
       <p className="text-slate-700 text-3xl font-semibold mb-3">
         Our company offers best in class services
       </p>
-      <p className="text-xl bg-mlite p-5 rounded-md text-slate-500 mb-5">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet magni
-        consectetur quas ab ea reiciendis ipsum perspiciatis eligendi
-        consequatur Lorem ipsum dolor, sit amet consectetur adipisicing elit
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam culpa
-        quidem vero vel voluptates hic id corporis, beatae officia perferendis
-        dicta dolorum, repudiandae neque ad explicabo, ex delectus labore
-        facere!
-      </p>
+      <div className="grid grid-cols-1 gap-8">
+        {data.map((item) => (
+          <ServiceAllCrd key={item.alt} data={item} />
+        ))}
+      </div>
     </div>
   );
 };
